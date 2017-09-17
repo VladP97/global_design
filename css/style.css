@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu.ttf);
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../Images/background.png);
+    background-blend-mode: soft-light;
+    background-color: rgba(106, 75, 53, 0.68);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+    padding: 3% 0 3% 8%;
+}
+
+.wrapper {
+    font-size: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.main-content {
+    display: inline-block;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+}
+
+.heading {
+    color: #fff;
+    font-family: Ubuntu;
+    margin: 8% 0 0 16%;
+    font-size: 32pt;
+    width: 80%;
+    text-align: left;
+}
+
+.heading > span {
+    color: #e9c174;
+    font-weight: bold;
+}
+
+.heading > span:last-child {
+    color: #fff;
+}
+
+.get-catalog-form {
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.38);
+    margin: 6% 14%;
+    width: 73%
+}
+
+.form-heading {
+    width: auto;
+    text-align: center;
+    margin: 0 0 5% 0;
+    font-size: 17pt;
+    line-height: 1.2;
+}
+
+.get-catalog-form > input {
+    font-family: Ubuntu;
+    font-size: 14pt;
+    margin: 3% auto 0;
+    height: 44px;
+    width: 89%;
+}
+
+.get-catalog-form > input:last-child {
+    font-weight: bold;
+    margin: 4% auto;
+    border-radius: 0;
+    font-size: 16pt;
+    background-color: rgb(224, 64, 28);
+    border: none;
+    height: 50px;
+    color: #fff;
+}
+
+.col-sm-10 {
+    height: 100%;
+}
+
+.get-catalog-form > input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.get-catalog-form > input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.get-catalog-form > input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.get-catalog-form > input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.get-catalog-form > input::-webkit-input-placeholder {
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.get-catalog-form > input::-moz-placeholder {
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.get-catalog-form > input:-moz-placeholder {
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.get-catalog-form > input:-ms-input-placeholder {
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.catalogs-image {
+    display: inline-block;
+    width: 676px;
+    position: absolute;
+    right: 5%;
+    top: 15%
+}
+
+.catalogs-image > img {
+    width: 105%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .catalogs-image {
+        right: 5%;
+        top: 12%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .catalogs-image {
+        right: 20%;
+        top: 55%;
+        width: 626px;
+    }
+}
+
+@media only screen and (max-device-width: 736px) {
+    .catalogs-image {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    .catalogs-image {
+        top: 50%;
+        right: -10%;
+    }
+
+    .catalogs-image > img {
+        width: 80%;
+        /*right: 0%;*/
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 414px) {
+    .heading {
+        font-size: 54pt;
+        margin: 10% auto;
+        width: 90%
+    }
+
+    .form-heading {
+        font-size: 46pt;
+        margin: 5% auto;
+    }
+
+    .get-catalog-form {
+        margin: auto;
+        width: 90%;
+    }
+
+    .get-catalog-form > input {
+        font-size: 32pt;
+        margin: 3% auto 0;
+        height: 80px;
+    }
+
+    .get-catalog-form > input:last-child {
+        font-size: 32pt;
+        height: 90px;
+    }
+
+    .catalogs-image {
+        display: none;
+    }
+}
